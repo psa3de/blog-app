@@ -94,6 +94,7 @@ Notes
 | updated_at     | Date         | !nullable          |                         |
 
 Notes
+- When considering how to store blog content, it was decided that a "text" type would be used. This design is agnostic to however the front-end would handle additional media such as images. Media could be hosted on a CDN, and linked within the text, for example.
 - A `publish_date` should be added to the table, but since the functionality for draft posts does not currently exist, once a post is created it is automatically set to a `live` status. In this case, the `created_at` field functionally acts as a `publish_date`.
 
 ### Additional Considerations
